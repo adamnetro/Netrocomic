@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;400&family=Jost&family=Poppins:ital,wght@1,500&family=Tajawal:wght@300&display=swap');
+
+*{
+    font-family: 'Tajawal', sans-serif;
+    margin: 0%;
+    font-weight: 900;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 130vh;
+}
+
+.logo{
+    height: 70px;
+    margin-left: 2em;
+}
+
+.box{
+    position: fixed;
+    background: none;
+    font-size: 2em;
+    outline: none;
+    border-radius: 8px 20px 8px 20px;
+    padding: 0px 10px;
+    border: 2px solid red;
+    text-align: end;
+}
+
+
+.navi{
+    margin-left: 65%;
+    cursor: pointer;
+}
+
+
+.navi h1{
+    color: #11161a;
+    font-weight: 400;
+    border-bottom: 2px solid red;
+}
+
+.opn-men-srch{
+    font-size: 2em;
+    margin-left: 20px;
+    color: red;
+    cursor: pointer;
+    display: none;
+}
+
+.back-list-books{
+    position: fixed;
+    background-color: white;
+    box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.199);
+    border-radius: 30px;
+    overflow: hidden;
+    overflow: scroll;
+    height: 0%;
+    width: 44em;
+    padding: 0px;
+    padding-right: 0%;
+    z-index: 1;
+    margin-left: 30%;
+    margin-top: 6%;
+    transition: 0.1s ease;
+}
+
+.back-list-books-active{
+    height: 75%;
+    padding: 20px;
+    padding-right: 20%;
+    transition: 0.1s ease;
+}
+
+.back-list-books::-webkit-scrollbar{
+    display: none;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background: none;
+}
+
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 0, 0, 0.459);
+    border-radius: 30px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: red;
+}
+.full-search{
+    display: none;
+    font-size: 2em;
+    position: fixed;
+    margin-left: 8.5%;
+    border-bottom: red 3px solid;
+}
+
+.full-search input{
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 1em;
+}
+
+.full-search a{
+    margin-left: 10px;
+}
+
+.list-books {
+    margin-top: 1em;
+}
+
+.list-books .BK{
+    display: flex;
+}
+
+.list-books h2{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.list-books img {
+    height: 10em;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.199);
+}
+
+header{
+    max-width: 100em;
+    margin-top: 1.5em;
+    margin-left: 8.5%;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 0px 20px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.199);
+}
+
+
+
+
+.menu-lang{
+    background-color: rgba(255, 255, 255, 0.904);
+    box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.199);
+    position: fixed;
+    padding: 10px 15px;
+    margin-top: 6%;
+    margin-left: 75%;
+    z-index: 1;
+    display: none;
+    text-align: end;
+}
+.menulang-active{
+    border-right: #11161a 3px solid;
+    border-bottom: #11161a 3px solid;
+    border-top: red 3px solid;
+    border-left: red 3px solid;
+    border-radius: 8px 30px 8px 30px;
+    display: block;
+}
+
+.menu-lang h1{
+    margin-bottom: 0.5em;
+}
+
+.menu-lang span{
+    color: red;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.menu-lang a{
+    color:#616A6B;
+    text-decoration: none;
+    font-size: 2em;
+    display: block;
+    cursor: pointer;
+    font-weight: 200;
+}
+
+.menu-lang a:hover{
+    font-weight: 900;
+    color: red;
+}
+
+.icon-dark button{
+    border: none;
+    background: none;
+    font-size: 3em;
+    position: fixed;
+    margin-top: 44%;
+    margin-left: 95%;
+    color:#B2BABB ; 
+    cursor: pointer;
+}
+
+.icon-dark button:active{
+    transform: scale(0.60);
+}
+
+.icon-up a{
+    border: none;
+    background: none;
+    font-size: 3em;
+    position: fixed;
+    margin-top: 44%;
+    margin-left: 91%;
+    color:#B2BABB ; 
+    cursor: pointer;
+}
+
+.icon-up a:active{
+    transform: scale(0.60);
+    transition: 0.1s ease;
+}
+
+.icon-up a:focus{
+    color: #00FF00;
+}
+
+.title-book{
+    font-size: 3.5em;
+    padding-top: 8%;
+    text-decoration:underline red;
+    text-align: end;
+    margin-right: 4%;
+}
+
+.defnt{
+    display: flex;
+}
+
+.wrt-dfnt{
+    margin-right: 2%;
+    text-align: end;
+}
+.wrt-dfnt h1{
+    display: block;
+    font-size: 2.2em;
+    margin-top: 3%;
+    color: red;
+}
+.wrt-dfnt h1 span{
+    margin-left: 10px;
+    font-weight: 400;
+    color: black;
+}
+
+.defnt img{
+    height: 35em;
+    border-radius: 20px;
+    margin-top: 2%;
+    cursor: pointer;
+    transition: 0.2s ease;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.199);
+}
+
+.bk-df:hover{
+    border-radius: 7px;
+    transition: 0.2s ease;
+}
+
+.dw-rd{
+    font-size: 3em;
+    margin-top: 3%;
+}
+
+.dw-rd a{
+    margin-left: 20px;
+    text-decoration: none;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.199);
+}
+
+.dw-rd .dw{
+    color: white;
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 7px 25px 7px 25px;
+    transition: 0.2s ease;
+}
+
+.dw-rd .rd{
+    color: white;
+    background-color: #00db00;
+    padding: 5px 10px;
+    border-radius: 7px 25px 7px 25px;
+    transition: 0.2s ease;
+}
+
+.dw:hover{
+    background:none;
+    color: red;
+    transition: 0.2s ease;
+}
+
+.rd:hover{
+    background:none;
+    color: #00db00;
+    transition: 0.2s ease;
+}
+
+@media (max-width: 1905px){
+
+    .icon-dark button{
+        margin-top: 7%;
+        margin-left: 6%;
+    }
+    
+    
+    .icon-up a{
+        margin-top: 7%;
+        margin-left: 2%;
+    }
+}
+
+@media (max-width: 1580px){
+
+    .back-list-books{
+        margin-left: 30%;
+        margin-top: 10%;
+    }
+
+}
+
+@media (max-width: 1350px){
+    
+    .logo{
+        height: 70px;
+        margin-left: 2em;
+    }
+    
+    .box{
+        margin-left: 17%;
+    }
+    
+    
+    .navi{
+        margin-left: 55%;
+    }
+
+}
+
+@media (max-width: 1080px){
+    header{
+        border-radius: 5em;
+        padding: 25px 20px;
+        width: 80%;
+    }
+    
+    .logo{
+        height: 6em;
+    }
+    
+    .box{
+        display: none;
+    }
+    
+    
+    .navi{
+        margin-left: 15%;
+    }
+    
+    
+    .navi h1{
+        font-size: 4em;
+    }
+    
+    .opn-men-srch{
+        font-size: 4em;
+        margin-left: 20px;
+        color: red;
+        cursor: pointer;
+        display: block;
+    }
+
+    .back-list-books{
+        margin-left: 13%;
+        margin-top: 20%;
+    }
+    
+    .back-list-books-active{
+        height: 75%;
+        padding: 20px;
+        padding-right: 20%;
+        transition: 0.1s ease;
+        border-radius: 50px;
+        display: block;
+    }
+    
+    
+    
+    .full-search{
+        font-size: 3em;
+    }
+    
+    .full-search input{
+        color: red;
+    }
+    
+    
+    .list-books {
+        margin-top: 5em;
+    }
+    
+    
+    .list-books h2{
+        font-size: 3em;
+    }
+    
+    .list-books img {
+        height: 15em;
+    }
+    
+    .menu-lang{
+        padding: 10px 25px;
+        margin-top: 20%;
+        margin-left: 56%;
+        display: none;
+    }
+    .menulang-active{
+        display: block;
+        z-index: 2;
+    }
+    
+    .menu-lang h1{
+        font-size: 3em;
+    }
+    
+    
+    .menu-lang a{
+        font-size: 4em;
+    }
+
+    .title-book{
+        font-size: 3.5em;
+        padding-top: 22%;
+    }
+
+    
+    .icon-dark button{
+        font-size: 5em;
+        margin-top: 160%;
+        margin-left: 89%;
+    }
+    
+    
+    .icon-up a{
+        font-size: 5em;
+        margin-top: 160%;
+        margin-left: 79%;
+    }
+
+    .rd {
+        display: none;
+    }
+}
